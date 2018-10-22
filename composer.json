@@ -1,5 +1,13 @@
 {
-  "name": "RouteMax",
+  "name": "framesnpictures/route-max",
+  "description": "Laravel Single Action Controller Library",
+  "authors": [
+    {
+      "name": "Chris Cynarski",
+      "email": "chris@cynarski.net"
+    }
+  ],
+  "minimum-stability": "dev",
   "require": {
     "framesnpictures/dto": "^0.4.1"
   },
