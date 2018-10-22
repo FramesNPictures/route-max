@@ -1,0 +1,10 @@
+{
+    "require": {
+        "framesnpictures/dto": "^0.4.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fnp\\RouteMax\\":  "src/"
+        }
+    }
+}
