@@ -47,6 +47,4 @@ abstract class RouteMax
             }
         }
     }
-
-    abstract public function handle();
 }
