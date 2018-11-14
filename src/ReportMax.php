@@ -15,7 +15,7 @@ abstract class ReportMax implements Arrayable
     use DtoToArray;
     use DtoToJson;
 
-    public function __construct(Request $request = NULL, $data = [])
+    public function __construct($data = [], Request $request = NULL)
     {
         $this->initTraits();
 
@@ -28,7 +28,7 @@ abstract class ReportMax implements Arrayable
 
     public static function make($data)
     {
-        return new static(NULL, $data);
+        return new static($data, NULL);
     }
 
     public function handle()
