@@ -27,24 +27,24 @@ abstract class ReportMax implements Arrayable
         $this->fill($data);
     }
 
-    public static function get($url, $action = 'handle')
+    public static function get($url)
     {
-        return Route::get($url, self::controller($action));
+        return Route::get($url, self::action());
     }
 
-    public static function post($url, $action = 'handle')
+    public static function post($url)
     {
-        return Route::get($url, self::controller($action));
+        return Route::get($url, self::action());
     }
 
-    public static function put($url, $action = 'handle')
+    public static function put($url)
     {
-        return Route::put($url, self::controller($action));
+        return Route::put($url, self::action());
     }
 
-    public static function delete($url, $action = 'handle')
+    public static function delete($url)
     {
-        return Route::delete($url, self::controller($action));
+        return Route::delete($url, self::action());
     }
 
     public static function make($data)
@@ -80,6 +80,15 @@ abstract class ReportMax implements Arrayable
         }
     }
 
+    public static function action()
+    {
+        return get_called_class() . '@handle';
+    }
+
+    /**
+     * @deprecated Will be removed in the next version
+     * @return string
+     */
     public static function controller()
     {
         return get_called_class() . '@handle';
