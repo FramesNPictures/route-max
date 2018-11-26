@@ -15,5 +15,9 @@
     "psr-4": {
       "Fnp\\RouteMax\\": "src/"
     }
+  },
+  "require-dev": {
+    "orchestra/testbench": "~3.0",
+    "illuminate/support": "^5.8@dev"
   }
 }

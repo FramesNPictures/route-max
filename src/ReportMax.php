@@ -8,6 +8,7 @@ use Fnp\Dto\Common\DtoToJson;
 use Fnp\Dto\Common\Helper\Obj;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
 
 abstract class ReportMax implements Arrayable
 {
@@ -24,6 +25,26 @@ abstract class ReportMax implements Arrayable
         }
 
         $this->fill($data);
+    }
+
+    public static function get($url, $action = 'handle')
+    {
+        return Route::get($url, self::controller($action));
+    }
+
+    public static function post($url, $action = 'handle')
+    {
+        return Route::get($url, self::controller($action));
+    }
+
+    public static function put($url, $action = 'handle')
+    {
+        return Route::put($url, self::controller($action));
+    }
+
+    public static function delete($url, $action = 'handle')
+    {
+        return Route::delete($url, self::controller($action));
     }
 
     public static function make($data)
