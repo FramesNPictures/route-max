@@ -13,13 +13,16 @@ abstract class RouteMax
 {
     use DtoFill;
 
-    public function __construct(Request $request)
+    public function __construct(Request $request = NULL)
     {
         $this->initTraits();
-        $this->fill($request->all(), DtoFillFlags::FILL_PUBLIC);
 
-        if ($request->route())
-            $this->fill($request->route()->parameters(), DtoFillFlags::FILL_PUBLIC);
+        if ($request) {
+            $this->fill($request->all(), DtoFillFlags::FILL_PUBLIC);
+
+            if ($request->route())
+                $this->fill($request->route()->parameters(), DtoFillFlags::FILL_PUBLIC);
+        }
     }
 
     public static function action($action = 'handle')
