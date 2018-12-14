@@ -3,6 +3,7 @@
 namespace Fnp\RouteMax;
 
 use Fnp\Dto\Common\DtoFill;
+use Fnp\Dto\Common\DtoToArray;
 use Fnp\Dto\Common\Flags\DtoFillFlags;
 use Fnp\Dto\Common\Helper\Obj;
 use Illuminate\Http\Request;
