@@ -21,7 +21,10 @@ abstract class RouteMax
             $this->fill($request->all(), DtoFillFlags::FILL_PUBLIC);
 
             if ($request->route())
-                $this->fill($request->route()->parameters(), DtoFillFlags::FILL_PUBLIC);
+                $this->fill(
+                    $request->route()->parameters(),
+                    DtoFillFlags::FILL_PUBLIC + DtoFillFlags::FILL_PROTECTED
+                );
         }
     }
 
