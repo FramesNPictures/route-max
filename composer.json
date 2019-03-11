@@ -9,7 +9,7 @@
   ],
   "minimum-stability": "dev",
   "require": {
-    "framesnpictures/dto": "^0.4.1"
+    "framesnpictures/dto": "^0.5"
   },
   "autoload": {
     "psr-4": {
