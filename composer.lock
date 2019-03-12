@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "framesnpictures/dto",
-            "version": "0.5.1",
+            "version": "0.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FramesNPictures/dto.git",
-                "reference": "a6d0fb4c82df152459f0a5ec01f1fc98fbf67a85"
+                "reference": "a2abd8f41536c01fe1f2d980d71176f49a1512a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FramesNPictures/dto/zipball/a6d0fb4c82df152459f0a5ec01f1fc98fbf67a85",
-                "reference": "a6d0fb4c82df152459f0a5ec01f1fc98fbf67a85",
+                "url": "https://api.github.com/repos/FramesNPictures/dto/zipball/a2abd8f41536c01fe1f2d980d71176f49a1512a8",
+                "reference": "a2abd8f41536c01fe1f2d980d71176f49a1512a8",
                 "shasum": ""
             },
             "require": {
@@ -42,7 +42,7 @@
                 }
             ],
             "description": "Universal Data Transport Objects",
-            "time": "2019-03-11T17:33:37+00:00"
+            "time": "2019-03-12T18:17:56+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
