@@ -7,7 +7,7 @@
       "email": "chris@cynarski.net"
     }
   ],
-  "minimum-stability": "dev",
+  "minimum-stability": "stable",
   "require": {
     "framesnpictures/dto": "^0.5"
   },
