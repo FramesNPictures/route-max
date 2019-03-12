@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "58759fac2479b1a71e6afb75d5ee0cc9",
+    "content-hash": "1312db028bc5ebbdb559ae0ce03c8419",
     "packages": [
         {
             "name": "framesnpictures/dto",
@@ -4045,11 +4045,11 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "RC",
     "stability-flags": {
         "illuminate/support": 20
     },
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": []
