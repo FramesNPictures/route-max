@@ -67,7 +67,7 @@ abstract class ReportMax extends RouteMax
 
     public function handle()
     {
-        return $this;
+        return $this->toArray();
     }
 
     public function __invoke(...$args)
