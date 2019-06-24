@@ -29,7 +29,7 @@ abstract class ReportMax extends RouteMax
         $route = [];
 
         if ($request) {
-            array_merge($data, $request->all());
+            $data = array_merge($data, $request->all());
 
             if ($request->route())
                 $route = $request->route()->parameters();
